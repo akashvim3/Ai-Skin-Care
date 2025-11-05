@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resources - DermAI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/resources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-microscope"></i>
+                    <span>Derm<span class="highlight">AI</span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="detect.html">Detect</a></li>
+                    <li><a href="diseases.html">Diseases</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="resources-hero">
+        <div class="container">
+            <h1>Educational Resources</h1>
+            <p>Learn about skin health, conditions, and AI-powered detection</p>
+        </div>
+    </section>
+
+    <section class="resources-content">
+        <div class="container">
+            <!-- Resource Categories -->
+            <div class="resource-categories">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th"></i> All Resources
+                </button>
+                <button class="category-btn" data-category="guides">
+                    <i class="fas fa-book"></i> Guides
+                </button>
+                <button class="category-btn" data-category="videos">
+                    <i class="fas fa-video"></i> Videos
+                </button>
+                <button class="category-btn" data-category="articles">
+                    <i class="fas fa-newspaper"></i> Articles
+                </button>
+                <button class="category-btn" data-category="research">
+                    <i class="fas fa-flask"></i> Research
+                </button>
+            </div>
+
+            <!-- Guides Section -->
+            <div class="resource-section" id="guides">
+                <h2><i class="fas fa-book-open"></i> Comprehensive Guides</h2>
+                <div class="resource-grid">
+                    <div class="resource-card" data-category="guides">
+                        <div class="resource-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Skin Care Basics</h3>
+                        <p>Essential daily skincare routines and best practices for healthy skin maintenance.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-clock"></i> 10 min read</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <button class="btn btn-secondary btn-small" onclick="openResource('skincare-basics')">
+                            Read Guide
+                        </button>
+                    </div>
+
+                    <div class="resource-card" data-category="guides">
+                        <div class="resource-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Sun Protection Guide</h3>
+                        <p>Learn about UV protection, sunscreen selection, and preventing sun damage.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <button class="btn btn-secondary btn-small" onclick="openResource('sun-protection')">
+                            Read Guide
+                        </button>
+                    </div>
+
+                    <div class="resource-card" data-category="guides">
+                        <div class="resource-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Understanding AI Detection</h3>
+                        <p>How artificial intelligence analyzes skin conditions and interprets results.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-clock"></i> 12 min read</span>
+                            <span><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <button class="btn btn-secondary btn-small" onclick="openResource('ai-detection')">
+                            Read Guide
+                        </button>
+                    </div>
+
+                    <div class="resource-card" data-category="guides">
+                        <div class="resource-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Taking Quality Photos</h3>
+                        <p>Professional tips for capturing clear, diagnostic-quality skin images.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <button class="btn btn-secondary btn-small" onclick="openResource('photo-guide')">
+                            Read Guide
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Articles Section -->
+            <div class="resource-section" id="articles">
+                <h2><i class="fas fa-newspaper"></i> Latest Articles</h2>
+                <div class="articles-list">
+                    <article class="article-item" data-category="articles">
+                        <div class="article-image">
+                            <img src="assets/images/article1.jpg" alt="Article">
+                            <span class="article-badge">New</span>
+                        </div>
+                        <div class="article-content">
+                            <h3>Early Detection Saves Lives: The Importance of Regular Skin Checks</h3>
+                            <p>Discover why regular self-examinations and professional screenings are crucial for maintaining skin health and catching potential issues early.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> Sep 25, 2025</span>
+                                <span><i class="fas fa-user"></i> Dr. Sarah Johnson</span>
+                                <span><i class="fas fa-clock"></i> 5 min read</span>
+                            </div>
+                            <button class="btn btn-secondary btn-small">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="article-item" data-category="articles">
+                        <div class="article-image">
+                            <img src="assets/images/article2.jpg" alt="Article">
+                        </div>
+                        <div class="article-content">
+                            <h3>AI in Dermatology: Revolutionizing Skin Disease Detection</h3>
+                            <p>Explore how machine learning and computer vision are transforming the field of dermatology and improving patient outcomes worldwide.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> Sep 20, 2025</span>
+                                <span><i class="fas fa-user"></i> Michael Chen</span>
+                                <span><i class="fas fa-clock"></i> 8 min read</span>
+                            </div>
+                            <button class="btn btn-secondary btn-small">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="article-item" data-category="articles">
+                        <div class="article-image">
+                            <img src="assets/images/article3.jpg" alt="Article">
+                        </div>
+                        <div class="article-content">
+                            <h3>Common Skin Conditions: Symptoms, Causes, and Treatments</h3>
+                            <p>A comprehensive overview of the most prevalent skin conditions, their identifying features, and modern treatment approaches.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> Sep 15, 2025</span>
+                                <span><i class="fas fa-user"></i> Dr. Emily Rodriguez</span>
+                                <span><i class="fas fa-clock"></i> 10 min read</span>
+                            </div>
+                            <button class="btn btn-secondary btn-small">Read More</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Video Tutorials -->
+            <div class="resource-section" id="videos">
+                <h2><i class="fas fa-play-circle"></i> Video Tutorials</h2>
+                <div class="video-grid">
+                    <div class="video-card" data-category="videos">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/video-thumb1.jpg" alt="Video">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span class="video-duration">5:32</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>How to Use DermAI: Complete Tutorial</h3>
+                            <p>Step-by-step guide to analyzing your skin condition using our AI-powered platform.</p>
+                            <div class="video-stats">
+                                <span><i class="fas fa-eye"></i> 15.2K views</span>
+                                <span><i class="fas fa-thumbs-up"></i> 1.2K</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-category="videos">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/video-thumb2.jpg" alt="Video">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span class="video-duration">8:15</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>Skin Self-Examination Technique</h3>
+                            <p>Learn the proper method for conducting thorough skin self-examinations at home.</p>
+                            <div class="video-stats">
+                                <span><i class="fas fa-eye"></i> 23.5K views</span>
+                                <span><i class="fas fa-thumbs-up"></i> 2.1K</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card" data-category="videos">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/video-thumb3.png" alt="Video">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span class="video-duration">6:42</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>Understanding Your Results</h3>
+                            <p>How to interpret AI analysis results and when to seek professional medical advice.</p>
+                            <div class="video-stats">
+                                <span><i class="fas fa-eye"></i> 18.7K views</span>
+                                <span><i class="fas fa-thumbs-up"></i> 1.8K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Papers -->
+            <div class="resource-section" id="research">
+                <h2><i class="fas fa-graduation-cap"></i> Research & Studies</h2>
+                <div class="research-list">
+                    <div class="research-item" data-category="research">
+                        <div class="research-header">
+                            <h3>Deep Learning for Skin Lesion Classification: A Systematic Review</h3>
+                            <span class="research-badge">Peer-Reviewed</span>
+                        </div>
+                        <p class="research-authors">Johnson, S., Chen, M., Rodriguez, E., et al.</p>
+                        <p class="research-abstract">
+                            This systematic review examines the application of deep learning techniques in automated skin lesion classification, analyzing accuracy rates, methodologies, and clinical implications across 127 published studies.
+                        </p>
+                        <div class="research-meta">
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                            <span><i class="fas fa-book"></i> Journal of Dermatological AI</span>
+                            <span><i class="fas fa-file-pdf"></i> PDF</span>
+                        </div>
+                        <button class="btn btn-secondary btn-small">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+
+                    <div class="research-item" data-category="research">
+                        <div class="research-header">
+                            <h3>Convolutional Neural Networks in Melanoma Detection: A Meta-Analysis</h3>
+                            <span class="research-badge">Peer-Reviewed</span>
+                        </div>
+                        <p class="research-authors">Williams, J., Anderson, K., Lee, T.</p>
+                        <p class="research-abstract">
+                            Meta-analysis of 89 studies investigating the diagnostic accuracy of CNN-based systems for melanoma detection, demonstrating sensitivity rates comparable to expert dermatologists.
+                        </p>
+                        <div class="research-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-book"></i> Clinical AI Research</span>
+                            <span><i class="fas fa-file-pdf"></i> PDF</span>
+                        </div>
+                        <button class="btn btn-secondary btn-small">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Tips -->
+            <div class="quick-tips-section">
+                <h2><i class="fas fa-lightbulb"></i> Quick Health Tips</h2>
+                <div class="tips-carousel">
+                    <div class="tip-item">
+                        <i class="fas fa-droplet"></i>
+                        <h4>Stay Hydrated</h4>
+                        <p>Drink 8+ glasses of water daily for healthy, glowing skin</p>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-moon"></i>
+                        <h4>Get Quality Sleep</h4>
+                        <p>7-9 hours of sleep helps skin repair and regenerate</p>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-apple-alt"></i>
+                        <h4>Eat Healthy</h4>
+                        <p>Consume antioxidant-rich foods for better skin health</p>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-running"></i>
+                        <h4>Exercise Regularly</h4>
+                        <p>Physical activity improves blood circulation to skin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h2>Stay Informed</h2>
+                    <p>Subscribe to receive the latest skin health tips and updates</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <label>
+                            <input type="email" placeholder="Enter your email address" required>
+                        </label>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Subscribe
+                        </button>
+                    </form>
+                    <p class="newsletter-privacy">We respect your privacy. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-microscope"></i>
+                        <span>Derm<span class="highlight">AI</span></span>
+                    </div>
+                    <p>Advanced AI-powered skin disease detection for early diagnosis and better health outcomes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="detect.html">Detection Tool</a></li>
+                        <li><a href="offline.html">Offline Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="resources.html">Research Papers</a></li>
+                        <li><a href="settings.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@dermai.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DermAI. All rights reserved. | <strong>Disclaimer:</strong> This tool is for educational purposes only. Always consult a healthcare professional for medical advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/resources.js"></script>
+</body>
+</html>

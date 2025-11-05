@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/pwa-init.js"></script>
+    <link rel="manifest" href="Manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>DermAI - AI Skin Disease Detector</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-microscope"></i>
+                    <span>Derm<span class="highlight">AI</span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="detect.html">Detect</a></li>
+                    <li><a href="diseases.html">Diseases</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Advanced AI-Powered Skin Disease Detection</h1>
+                    <p class="hero-subtitle">Get instant, accurate skin condition analysis using deep learning technology. Early detection saves lives.</p>
+                    <div class="hero-buttons">
+                        <a href="detect.html" class="btn btn-primary">
+                            <i class="fas fa-camera"></i> Start Detection
+                        </a>
+                        <a href="about.html" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i> Learn More
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>98.5%</h3>
+                            <p>Accuracy Rate</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Analyses Done</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Skin Conditions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <img src="assets/images/hero-illustration.png" alt="AI Skin Analysis">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose DermAI?</h2>
+                <p>Advanced technology meets healthcare accessibility</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Deep Learning AI</h3>
+                    <p>Powered by advanced convolutional neural networks trained on thousands of dermatological images</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Instant Results</h3>
+                    <p>Get comprehensive analysis in seconds, no waiting required for preliminary screening</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy Protected</h3>
+                    <p>All analysis happens in your browser. Your images never leave your device</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>Works seamlessly on all devices - desktop, tablet, or smartphone</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Detailed Analysis</h3>
+                    <p>Comprehensive reports with confidence scores and recommendations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>No Installation</h3>
+                    <p>Browser-based solution requiring no downloads or special software</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple 3-step process for skin analysis</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <i class="fas fa-upload"></i>
+                        <h3>Upload Image</h3>
+                        <p>Take or upload a clear photo of the affected skin area</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <i class="fas fa-cog"></i>
+                        <h3>AI Analysis</h3>
+                        <p>Our deep learning model analyzes the image patterns</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <i class="fas fa-file-medical"></i>
+                        <h3>Get Results</h3>
+                        <p>Receive detailed analysis with recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detectable Conditions -->
+    <section class="conditions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Detectable Skin Conditions</h2>
+                <p>Our AI can identify various common skin diseases</p>
+            </div>
+            <div class="conditions-grid">
+                <div class="condition-card">
+                    <img src="assets/images/acne.png" alt="Acne">
+                    <h3>Acne</h3>
+                    <p>Common inflammatory skin condition affecting hair follicles</p>
+                </div>
+                <div class="condition-card">
+                    <img src="assets/images/eczema.jpg" alt="Eczema">
+                    <h3>Eczema</h3>
+                    <p>Chronic condition causing itchy, inflamed skin patches</p>
+                </div>
+                <div class="condition-card">
+                    <img src="assets/images/psoriasis.jpg" alt="Psoriasis">
+                    <h3>Psoriasis</h3>
+                    <p>Autoimmune condition with scaly skin patches</p>
+                </div>
+                <div class="condition-card">
+                    <img src="assets/images/melanoma.jpg" alt="Melanoma">
+                    <h3>Melanoma</h3>
+                    <p>Serious skin cancer requiring immediate attention</p>
+                </div>
+                <div class="condition-card">
+                    <img src="assets/images/dermatitis.jpg" alt="Dermatitis">
+                    <h3>Dermatitis</h3>
+                    <p>Skin inflammation causing redness and irritation</p>
+                </div>
+                <div class="condition-card">
+                    <img src="assets/images/rosacea.jpg" alt="Rosacea">
+                    <h3>Rosacea</h3>
+                    <p>Chronic facial redness and visible blood vessels</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Check Your Skin Health?</h2>
+                <p>Start your free skin analysis now with our AI-powered detection system</p>
+                <a href="detect.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-camera"></i> Start Free Detection
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-microscope"></i>
+                        <span>Derm<span class="highlight">AI</span></span>
+                    </div>
+                    <p>Advanced AI-powered skin disease detection for early diagnosis and better health outcomes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="detect.html">Detection Tool</a></li>
+                        <li><a href="diseases.html">Diseases Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="resources.html">Research Papers</a></li>
+                        <li><a href="settings.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@dermai.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DermAI. All rights reserved. | <strong>Disclaimer:</strong> This tool is for educational purposes only. Always consult a healthcare professional for medical advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

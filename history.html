@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis History - DermAI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-microscope"></i>
+                    <span>Derm<span class="highlight">AI</span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="detect.html">Detect</a></li>
+                    <li><a href="diseases.html">Diseases</a></li>
+                    <li><a href="history.html" class="active">History</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="history-section">
+        <div class="container">
+            <div class="history-header">
+                <div>
+                    <h1>Analysis History</h1>
+                    <p>View your previous skin disease detection results</p>
+                </div>
+                <div class="history-actions">
+                    <button class="btn btn-secondary" onclick="exportHistory()">
+                        <i class="fas fa-download"></i> Export
+                    </button>
+                    <button class="btn btn-danger" onclick="clearHistory()">
+                        <i class="fas fa-trash"></i> Clear All
+                    </button>
+                </div>
+            </div>
+
+            <div class="history-stats">
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <div>
+                        <h3 id="totalAnalyses">0</h3>
+                        <p>Total Analyses</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar"></i>
+                    <div>
+                        <h3 id="thisMonth">0</h3>
+                        <p>This Month</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <div>
+                        <h3 id="mostCommon">-</h3>
+                        <p>Most Common</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-filter">
+                <label for="searchHistory"></label><input type="text" id="searchHistory" placeholder="Search diagnoses...">
+                <label for="sortHistory"></label><select id="sortHistory">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="confidence">Highest Confidence</option>
+                </select>
+            </div>
+
+            <div class="history-grid" id="historyGrid">
+                <!-- History items will be loaded here -->
+            </div>
+
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <i class="fas fa-inbox"></i>
+                <h3>No Analysis History</h3>
+                <p>Your detection history will appear here</p>
+                <a href="detect.html" class="btn btn-primary">
+                    <i class="fas fa-camera"></i> Start First Analysis
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Modal -->
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                <!-- Modal content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-microscope"></i>
+                        <span>Derm<span class="highlight">AI</span></span>
+                    </div>
+                    <p>Advanced AI-powered skin disease detection for early diagnosis and better health outcomes.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="detect.html">Detection Tool</a></li>
+                        <li><a href="compare.html">Compare</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="resources.html">Research Papers</a></li>
+                        <li><a href="settings.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@dermai.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DermAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/detection-advanced.js"></script>
+    <script src="assets/js/history.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - DermAI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-microscope"></i>
+                    <span>Derm<span class="highlight">AI</span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="detect.html">Detect</a></li>
+                    <li><a href="diseases.html">Diseases</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="faq-hero">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about DermAI</p>
+            <div class="faq-search">
+                <i class="fas fa-search"></i>
+                <label for="faqSearch"></label><input type="text" id="faqSearch" placeholder="Search for answers...">
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-content">
+        <div class="container">
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">
+                    All Questions
+                </button>
+                <button class="faq-category-btn" data-category="general">
+                    General
+                </button>
+                <button class="faq-category-btn" data-category="detection">
+                    Detection
+                </button>
+                <button class="faq-category-btn" data-category="privacy">
+                    Privacy
+                </button>
+                <button class="faq-category-btn" data-category="technical">
+                    Technical
+                </button>
+            </div>
+
+            <div class="faq-list">
+                <!-- General Questions -->
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <h3>What is DermAI?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>DermAI is an advanced AI-powered platform that uses deep learning technology to analyze skin conditions from uploaded images. It provides instant preliminary assessments to help users identify potential skin issues early. However, it should not replace professional medical diagnosis.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <h3>Is DermAI free to use?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, DermAI offers free skin disease detection services. All core features including image analysis, history tracking, and comparison tools are available at no cost. Our mission is to make skin health screening accessible to everyone.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <h3>Can DermAI replace a dermatologist?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. DermAI is a screening tool designed to provide preliminary information only. It cannot replace professional medical advice, diagnosis, or treatment. Always consult with a qualified dermatologist or healthcare provider for proper evaluation and treatment of skin conditions.</p>
+                    </div>
+                </div>
+
+                <!-- Detection Questions -->
+                <div class="faq-item" data-category="detection">
+                    <div class="faq-question">
+                        <h3>How accurate is the AI detection?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI model has been trained on thousands of dermatological images and achieves an accuracy rate of approximately 98.5% in controlled testing environments. However, accuracy can vary based on image quality, lighting, and the specific condition being analyzed. Results should always be verified by a medical professional.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="detection">
+                    <div class="faq-question">
+                        <h3>What skin conditions can DermAI detect?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>DermAI can identify various common skin conditions including acne, eczema, psoriasis, melanoma, dermatitis, rosacea, and several others. The system is continuously being updated with new conditions as our training data expands.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="detection">
+                    <div class="faq-question">
+                        <h3>How should I take photos for best results?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For optimal results: Use natural daylight, keep the camera steady and focused, capture the affected area clearly without shadows, fill the frame with the skin area, and avoid using flash. See our Photography Guidelines page for detailed instructions.</p>
+                    </div>
+                </div>
+
+                <!-- Privacy Questions -->
+                <div class="faq-item" data-category="privacy">
+                    <div class="faq-question">
+                        <h3>Is my data private and secure?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. All image analysis happens directly in your browser using client-side processing. Your images never leave your device unless you explicitly choose to save them. We do not store, transmit, or share your personal health data with third parties.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="privacy">
+                    <div class="faq-question">
+                        <h3>Do you store my uploaded images?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Images are only stored locally in your browser's storage if you enable the "Save History" feature in settings. We never upload images to our servers. You have full control over your data and can delete it anytime from the settings page.</p>
+                    </div>
+                </div>
+
+                <!-- Technical Questions -->
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>What browsers are supported?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>DermAI works best on modern browsers including Chrome 90+, Firefox 88+, Safari 14+, and Edge 90+. For optimal performance and all features, we recommend using the latest version of Chrome or Firefox.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Can I use DermAI offline?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! DermAI is a Progressive Web App (PWA) that can work offline once you've visited the site. The AI model and core functionality are cached in your browser, allowing you to analyze images even without an internet connection.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>What image formats are accepted?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept JPEG, PNG, and JPG image formats. Maximum file size is 5MB. Images are automatically processed and optimized for analysis.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Why is the analysis taking so long?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Analysis typically takes 2-5 seconds. Longer processing times may occur due to: large image files, slow device performance, first-time model loading, or browser resource constraints. Try refreshing the page or using a smaller image.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <h3>How often should I check my skin?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Dermatologists recommend performing self-examinations monthly. Use DermAI to track changes over time with the comparison feature. However, if you notice any sudden changes, growth, or concerning symptoms, consult a healthcare provider immediately.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="still-questions">
+                <h2>Still have questions?</h2>
+                <p>Can't find what you're looking for? Our support team is here to help.</p>
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Contact Support
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-microscope"></i>
+                        <span>Derm<span class="highlight">AI</span></span>
+                    </div>
+                    <p>Advanced AI-powered skin disease detection for early diagnosis and better health outcomes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="detect.html">Detection Tool</a></li>
+                        <li><a href="diseases.html">Diseases Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="resources.html">Research Papers</a></li>
+                        <li><a href="settings.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@dermai.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DermAI. All rights reserved. | <strong>Disclaimer:</strong> This tool is for educational purposes only. Always consult a healthcare professional for medical advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/faq.js"></script>
+</body>
+</html>

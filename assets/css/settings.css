@@ -1,0 +1,252 @@
+/* =====================
+   Settings Page Styles
+   ===================== */
+
+.settings-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: calc(100vh - 80px);
+}
+
+.settings-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.settings-header h1 {
+    font-size: 3rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.settings-header p {
+    font-size: 1.25rem;
+    color: var(--gray);
+}
+
+.settings-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.settings-card {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.settings-card-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.settings-card-header i {
+    font-size: 1.5rem;
+}
+
+.settings-card-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.settings-card-body {
+    padding: 2rem;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+.setting-info {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.setting-info h3 {
+    font-size: 1.125rem;
+    color: var(--dark);
+    margin-bottom: 0.25rem;
+}
+
+.setting-info p {
+    font-size: 0.875rem;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    flex-shrink: 0;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gray-light);
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+}
+
+.toggle-slider:hover {
+    opacity: 0.9;
+}
+
+/* Select Dropdown */
+.setting-select {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--gray-light);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--dark);
+    background: var(--white);
+    cursor: pointer;
+    transition: var(--transition);
+    min-width: 150px;
+}
+
+.setting-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Range Slider */
+.setting-range {
+    width: 200px;
+    height: 8px;
+    border-radius: 5px;
+    background: var(--gray-light);
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.setting-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    cursor: pointer;
+}
+
+.setting-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    cursor: pointer;
+    border: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #1a202c;
+    color: #e2e8f0;
+}
+
+body.dark-mode .navbar {
+    background: rgba(26, 32, 44, 0.95);
+}
+
+body.dark-mode .logo,
+body.dark-mode .nav-menu a {
+    color: #e2e8f0;
+}
+
+body.dark-mode .settings-section {
+    background: #1a202c;
+}
+
+body.dark-mode .settings-card {
+    background: #2d3748;
+}
+
+body.dark-mode .setting-info h3 {
+    color: #e2e8f0;
+}
+
+body.dark-mode .setting-info p {
+    color: #a0aec0;
+}
+
+body.dark-mode .setting-select {
+    background: #2d3748;
+    color: #e2e8f0;
+    border-color: #4a5568;
+}
+
+body.dark-mode .footer {
+    background: #2d3748;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .setting-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .setting-info {
+        padding-right: 0;
+    }
+
+    .setting-select,
+    .setting-range {
+        width: 100%;
+    }
+
+    .settings-header h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,219 @@
+MIT License
+
+Copyright (c) 2025 DermAI - AI-Powered Skin Disease Detector
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+                        MEDICAL DISCLAIMER
+================================================================================
+
+IMPORTANT - PLEASE READ CAREFULLY:
+
+This software (DermAI) is provided for EDUCATIONAL and INFORMATIONAL purposes
+only. It is NOT intended to be a substitute for professional medical advice,
+diagnosis, or treatment.
+
+1. NOT A MEDICAL DEVICE
+   - DermAI is not a medical device and has not been evaluated or approved by
+     any regulatory authority (FDA, CE, or equivalent).
+   - This software should not be used for clinical decision-making.
+
+2. NO DOCTOR-PATIENT RELATIONSHIP
+   - Use of this software does not create a doctor-patient relationship.
+   - Always seek the advice of a qualified healthcare provider with any
+     questions regarding a medical condition.
+
+3. NEVER DISREGARD PROFESSIONAL MEDICAL ADVICE
+   - Never disregard professional medical advice or delay in seeking it
+     because of something you have read or analyzed using this software.
+   - If you think you may have a medical emergency, call your doctor or
+     emergency services immediately.
+
+4. NO GUARANTEES OF ACCURACY
+   - While efforts have been made to ensure accuracy, the AI predictions are
+     not guaranteed to be correct.
+   - Results should be considered preliminary screening only.
+   - Many factors can affect accuracy including image quality, lighting,
+     camera angle, and individual variations.
+
+5. USER RESPONSIBILITY
+   - Users assume full responsibility for any decisions made based on
+     information provided by this software.
+   - The developers, contributors, and distributors of this software assume
+     no liability for any health outcomes.
+
+6. CONSULT A HEALTHCARE PROFESSIONAL
+   - Always consult with a qualified dermatologist or healthcare provider
+     for proper diagnosis and treatment.
+   - Show any concerning skin conditions to a medical professional regardless
+     of what this software indicates.
+
+7. EMERGENCY SITUATIONS
+   - For medical emergencies, call emergency services immediately.
+   - Do not rely on this software in emergency situations.
+
+================================================================================
+                        PRIVACY & DATA NOTICE
+================================================================================
+
+This software processes images locally in the user's browser. However:
+
+1. Users are responsible for understanding and complying with applicable
+   privacy laws (HIPAA, GDPR, etc.) when using this software.
+
+2. If deploying this software in a clinical or commercial setting, ensure
+   appropriate privacy safeguards and legal compliance.
+
+3. The developers are not responsible for any privacy breaches or data
+   misuse by third parties who deploy or modify this software.
+
+================================================================================
+                        THIRD-PARTY LICENSES
+================================================================================
+
+This software uses the following third-party libraries:
+
+1. TensorFlow.js (Apache License 2.0)
+   - Copyright (c) Google LLC
+   - https://github.com/tensorflow/tfjs
+
+2. Font Awesome (Font Awesome Free License)
+   - Icons: CC BY 4.0 License
+   - Fonts: SIL OFL 1.1 License
+   - Code: MIT License
+   - https://fontawesome.com/license/free
+
+3. Chart.js (MIT License)
+   - Copyright (c) Chart.js Contributors
+   - https://github.com/chartjs/Chart.js
+
+All third-party libraries retain their original licenses and copyright notices.
+
+================================================================================
+                        INTELLECTUAL PROPERTY
+================================================================================
+
+1. The DermAI name and logo are the property of the copyright holder.
+
+2. Users may not use the DermAI name or logo in a way that suggests
+   endorsement without explicit permission.
+
+3. When modifying and redistributing, please use a different name and branding
+   to avoid confusion.
+
+================================================================================
+                        CONTRIBUTION TERMS
+================================================================================
+
+By contributing to this project, you agree that your contributions will be
+licensed under the same MIT License that covers the project.
+
+Contributors must ensure they have the right to submit their contributions
+and that such contributions do not violate any third-party rights.
+
+================================================================================
+                        JURISDICTIONAL COMPLIANCE
+================================================================================
+
+Users are responsible for ensuring their use of this software complies with
+all applicable local, state, national, and international laws and regulations,
+including but not limited to:
+
+- Medical device regulations
+- Healthcare privacy laws
+- Data protection regulations
+- Consumer protection laws
+- Professional medical practice regulations
+
+================================================================================
+                        LIMITATION OF LIABILITY
+================================================================================
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE
+AUTHORS, COPYRIGHT HOLDERS, CONTRIBUTORS, OR DISTRIBUTORS BE LIABLE FOR ANY
+CLAIM, DAMAGES, OR OTHER LIABILITY, INCLUDING BUT NOT LIMITED TO:
+
+- Personal injury or death
+- Medical malpractice or misdiagnosis
+- Loss of data or privacy breaches
+- Economic losses
+- Any direct, indirect, incidental, special, exemplary, or consequential
+  damages arising from the use of this software
+
+This limitation applies whether the liability is based on contract, tort
+(including negligence), strict liability, or any other legal theory, even if
+advised of the possibility of such damages.
+
+================================================================================
+                        INDEMNIFICATION
+================================================================================
+
+Users agree to indemnify, defend, and hold harmless the authors, copyright
+holders, contributors, and distributors from and against any claims, damages,
+losses, liabilities, costs, and expenses (including reasonable attorneys' fees)
+arising from or related to:
+
+- Use or misuse of this software
+- Violation of these terms
+- Violation of any third-party rights
+- Any health outcomes or medical decisions
+
+================================================================================
+                        MODIFICATIONS AND UPDATES
+================================================================================
+
+The license may be updated from time to time. Continued use of the software
+constitutes acceptance of any changes to the license terms.
+
+Users are encouraged to check for updates regularly.
+
+================================================================================
+                        SEVERABILITY
+================================================================================
+
+If any provision of this license is found to be unenforceable or invalid, that
+provision shall be limited or eliminated to the minimum extent necessary so
+that this license shall otherwise remain in full force and effect and enforceable.
+
+================================================================================
+                        ENTIRE AGREEMENT
+================================================================================
+
+This license constitutes the entire agreement between the parties concerning
+the subject matter hereof and supersedes all prior or contemporaneous
+agreements, whether written or oral.
+
+================================================================================
+                        CONTACT INFORMATION
+================================================================================
+
+For questions regarding this license or the software, please contact:
+
+Email: info@dermai.com
+GitHub: https://github.com/yourusername/dermAI
+Website: https://dermai.com
+
+================================================================================
+
+ACKNOWLEDGMENT: BY USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ
+THIS LICENSE, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS.
+
+Last Updated: September 30, 2025
+Version: 1.0.0

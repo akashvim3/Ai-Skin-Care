@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - DermAI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-microscope"></i>
+                    <span>Derm<span class="highlight">AI</span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="detect.html">Detect</a></li>
+                    <li><a href="diseases.html">Diseases</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                    <li><a href="settings.html" class="active">Settings</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="settings-section">
+        <div class="container">
+            <div class="settings-header">
+                <h1>Settings</h1>
+                <p>Customize your DermAI experience</p>
+            </div>
+
+            <div class="settings-container">
+                <!-- Appearance Settings -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <i class="fas fa-palette"></i>
+                        <h2>Appearance</h2>
+                    </div>
+                    <div class="settings-card-body">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Dark Mode</h3>
+                                <p>Switch between light and dark theme</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="darkModeToggle">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Font Size</h3>
+                                <p>Adjust text size for better readability</p>
+                            </div>
+                            <label for="fontSizeSelect"></label><select id="fontSizeSelect" class="setting-select">
+                                <option value="small">Small</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Animations</h3>
+                                <p>Enable or disable page animations</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="animationsToggle" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detection Settings -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <i class="fas fa-search"></i>
+                        <h2>Detection Settings</h2>
+                    </div>
+                    <div class="settings-card-body">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Auto-Save Results</h3>
+                                <p>Automatically save detection results to history</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="autoSaveToggle" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Image Enhancement</h3>
+                                <p>Apply automatic image enhancement before analysis</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="enhancementToggle" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Confidence Threshold</h3>
+                                <p>Minimum confidence level for results (Current: <span id="thresholdValue">70</span>%)</p>
+                            </div>
+                            <label for="confidenceThreshold"></label><input type="range" id="confidenceThreshold" min="50" max="95" value="70" class="setting-range">
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Show All Predictions</h3>
+                                <p>Display all possible conditions, not just top result</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="showAllToggle" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notification Settings -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <i class="fas fa-bell"></i>
+                        <h2>Notifications</h2>
+                    </div>
+                    <div class="settings-card-body">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Browser Notifications</h3>
+                                <p>Receive browser notifications for important updates</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="browserNotificationsToggle">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Sound Effects</h3>
+                                <p>Play sounds for analysis completion</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="soundToggle">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Reminders</h3>
+                                <p>Get reminders to check skin condition regularly</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="remindersToggle">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Privacy Settings -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h2>Privacy & Data</h2>
+                    </div>
+                    <div class="settings-card-body">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Save Images Locally</h3>
+                                <p>Store uploaded images in browser storage</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="saveImagesToggle" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Analytics</h3>
+                                <p>Help improve DermAI by sharing anonymous usage data</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="analyticsToggle">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>History Limit</h3>
+                                <p>Maximum number of analyses to keep in history</p>
+                            </div>
+                            <label for="historyLimitSelect"></label><select id="historyLimitSelect" class="setting-select">
+                                <option value="10" selected>10 Analyses</option>
+                                <option value="25">25 Analyses</option>
+                                <option value="50">50 Analyses</option>
+                                <option value="100">100 Analyses</option>
+                            </select>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Clear All Data</h3>
+                                <p>Remove all stored data including history and preferences</p>
+                            </div>
+                            <button class="btn btn-danger" onclick="clearAllData()">
+                                <i class="fas fa-trash"></i> Clear Data
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About & Support -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <i class="fas fa-info-circle"></i>
+                        <h2>About & Support</h2>
+                    </div>
+                    <div class="settings-card-body">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Version</h3>
+                                <p>DermAI v1.0.0</p>
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Cache Size</h3>
+                                <p id="cacheSize">Calculating...</p>
+                            </div>
+                            <button class="btn btn-secondary" onclick="clearCache()">
+                                <i class="fas fa-broom"></i> Clear Cache
+                            </button>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Export Settings</h3>
+                                <p>Download your settings configuration</p>
+                            </div>
+                            <button class="btn btn-secondary" onclick="exportSettings()">
+                                <i class="fas fa-download"></i> Export
+                            </button>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Import Settings</h3>
+                                <p>Restore settings from a configuration file</p>
+                            </div>
+                            <button class="btn btn-secondary" onclick="document.getElementById('importFile').click()">
+                                <i class="fas fa-upload"></i> Import
+                            </button>
+                            <input type="file" id="importFile" accept=".json" hidden>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-microscope"></i>
+                        <span>Derm<span class="highlight">AI</span></span>
+                    </div>
+                    <p>Advanced AI-powered skin disease detection for early diagnosis and better health outcomes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="detect.html">Detection Tool</a></li>
+                        <li><a href="diseases.html">Diseases Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="resources.html">Research Papers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@dermai.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DermAI. All rights reserved. | <strong>Disclaimer:</strong> This tool is for educational purposes only. Always consult a healthcare professional for medical advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/settings.js"></script>
+</body>
+</html>

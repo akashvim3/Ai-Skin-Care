@@ -278,8 +278,7 @@ Severity Level: ${diseaseDatabase[diagnosisName].severity}
 
 RECOMMENDATIONS
 ---------------
-${diseaseDatabase[diagnosisName].recommendations.map((rec, i) => `${i + 1}. ${rec}`).join('
-')}
+${diseaseDatabase[diagnosisName].recommendations.map((rec, i) => `${i + 1}. ${rec}`).join('\n')}
 
 DISCLAIMER
 ----------
@@ -344,4 +343,4 @@ async function runRealPrediction(imageElement) {
 }
 
 // Initialize model on page load
-window.addEventListener('load', loadModel);
+window.addEventListener('load', loadModel); */
